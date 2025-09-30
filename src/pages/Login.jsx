@@ -7,6 +7,9 @@ function Login() {
       <p>
         Log in to your Zen account to publish stories, give feedback, and join the community of amateur writers.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
+      </p>
       {/* login form */}
       <form className="login-form">
         <div className="form-group">
@@ -19,6 +22,9 @@ function Login() {
         </div>
         <button type="submit" className="btn">Login</button>
       </form>
+      <p>
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      </p>
     </section>
   );
 }

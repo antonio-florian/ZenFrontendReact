@@ -7,6 +7,9 @@ function Register() {
       <p>
         Create a Zen account to start publishing your stories, receive feedback, and connect with other amateur writers.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod.
+      </p>
       {/* registration form */}
       <form className="registration-form">
         <div className="form-group">
@@ -23,6 +26,9 @@ function Register() {
         </div>
         <button type="submit" className="btn">Register</button>
       </form>
+      <p>
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+      </p>
     </section>
   );
 }

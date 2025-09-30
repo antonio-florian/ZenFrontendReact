@@ -1,5 +1,6 @@
 
 import './App.css';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -56,10 +57,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
-          <footer>
-            <p>Created by Zlat Antonio Florian</p>
-          </footer>
         </div>
+        <Footer />
       </main>
     </Router>
   );

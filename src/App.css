@@ -244,4 +244,19 @@ body.night-mode p, body.night-mode footer {
 /* App wrapper */
 #zen-app {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  /* ...existing styles... */
+}
+
+footer {
+  margin-top: 2rem;
+  color: #7a8ca5;
+  font-size: 0.95em;
+  /* Ensure footer stays at the bottom */
+  align-self: center;
 }
