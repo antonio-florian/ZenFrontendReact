@@ -1,0 +1,185 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f6f8fc 0%, #e3eafc 100%);
+  color: #22223b;
+}
+
+body.night-mode {
+  background: linear-gradient(135deg, #181a20 0%, #232946 100%);
+  color: #eaeaea;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #22223b;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(35,57,93,0.08);
+  padding: 0.7rem 2rem;
+  transition: top 0.3s, opacity 0.3s;
+}
+.navbar-hidden {
+  top: -80px;
+  opacity: 0;
+  pointer-events: none;
+  transition: top 0.3s, opacity 0.3s;
+}
+.navbar span {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #22223b;
+  letter-spacing: 2px;
+}
+.navbar a {
+  color: #22223b;
+  text-decoration: none;
+  margin: 0 1.2em;
+  font-weight: 500;
+  transition: color 0.2s;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+}
+.navbar a:hover {
+  background: #f6f8fc;
+  color: #3a86ff;
+}
+.navbar button {
+  background: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  margin-left: 0.5em;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.07);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.navbar button[aria-label="Toggle Night Mode"] {
+  background: none;
+  color: #3a86ff;
+  font-size: 1.3em;
+  margin-left: 0;
+  margin-right: 0.5em;
+  box-shadow: none;
+  padding: 0.2em 0.5em;
+}
+.navbar button:hover {
+  background: #22223b;
+  color: #fff;
+}
+.navbar button[aria-label="Toggle Night Mode"]:hover {
+  background: #f6f8fc;
+  color: #22223b;
+}
+
+.container {
+  max-width: 700px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(35,57,93,0.10);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #22223b;
+  margin-bottom: 0.5em;
+}
+p, footer {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #22223b;
+}
+footer {
+  margin-top: 2rem;
+  color: #7a8ca5;
+  font-size: 0.95em;
+}
+
+body.night-mode .navbar {
+  background: #232946;
+  color: #eaeaea;
+  box-shadow: 0 2px 8px rgba(35,57,93,0.18);
+}
+body.night-mode .navbar span {
+  color: #eaeaea;
+}
+body.night-mode .navbar a {
+  color: #eaeaea;
+}
+body.night-mode .navbar a:hover {
+  background: #181a20;
+  color: #3a86ff;
+}
+body.night-mode .navbar button {
+  background: #3a86ff;
+  color: #fff;
+}
+body.night-mode .navbar button[aria-label="Toggle Night Mode"] {
+  background: none;
+  color: #fff;
+}
+body.night-mode .navbar button:hover {
+  background: #181a20;
+  color: #3a86ff;
+}
+body.night-mode .container {
+  background: #232946;
+  color: #eaeaea;
+  box-shadow: 0 4px 24px rgba(35,57,93,0.25);
+}
+body.night-mode h1, body.night-mode h2 {
+  color: #eaeaea;
+}
+body.night-mode p, body.night-mode footer {
+  color: #a1a1a1;
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 95vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.7rem 0.2rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+  }
+  .navbar a, .navbar button {
+    margin: 0.5em 0;
+  }
+}
+
+#zen-app {
+  min-height: 100vh;
+}
