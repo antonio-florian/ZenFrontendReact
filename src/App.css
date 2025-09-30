@@ -1,4 +1,59 @@
+.navbar-link {
+  color: #232946;
+  background: transparent;
+  text-decoration: none;
+  margin: 0 1.2em;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+}
+.navbar-link:hover {
+  background: #e3eafc;
+  color: #3a86ff;
+}
 
+.login-btn {
+  background: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1em;
+  margin-left: 0.5em;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.07);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.register-btn {
+  background: #ffd700;
+  color: #232946;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4em 1em;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1em;
+  margin-left: 0.5em;
+  box-shadow: 0 1px 4px rgba(35,57,93,0.07);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.login-btn:hover, .register-btn:hover {
+  opacity: 0.85;
+}
+
+
+/*
+  App.css - Main styles for Zen app
+  - Responsive, modern, and DRY
+  - Night mode support
+  - Comments added for maintainability
+*/
+
+/* Base body styles */
 body {
   margin: 0;
   padding: 0;
@@ -7,11 +62,13 @@ body {
   color: #22223b;
 }
 
+/* Night mode body styles */
 body.night-mode {
   background: linear-gradient(135deg, #181a20 0%, #232946 100%);
   color: #eaeaea;
 }
 
+/* Navbar styles */
 .navbar {
   position: sticky;
   top: 0;
@@ -90,6 +147,7 @@ body.night-mode {
   color: #22223b;
 }
 
+/* Container for main content */
 .container {
   max-width: 700px;
   margin: 3rem auto 2rem auto;
@@ -102,6 +160,7 @@ body.night-mode {
   align-items: center;
 }
 
+/* Headings and text */
 h1, h2 {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   color: #22223b;
@@ -117,6 +176,7 @@ footer {
   font-size: 0.95em;
 }
 
+/* Night mode overrides */
 body.night-mode .navbar {
   background: #232946;
   color: #eaeaea;
@@ -156,6 +216,7 @@ body.night-mode p, body.night-mode footer {
   color: #a1a1a1;
 }
 
+/* Responsive styles */
 @media (max-width: 900px) {
   .container {
     max-width: 95vw;
@@ -180,6 +241,7 @@ body.night-mode p, body.night-mode footer {
   }
 }
 
+/* App wrapper */
 #zen-app {
   min-height: 100vh;
 }

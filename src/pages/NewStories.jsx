@@ -1,3 +1,5 @@
+
+// NewStories page component displays the latest stories from the community
 function NewStories() {
   return (
     <section className="page new-stories-page">

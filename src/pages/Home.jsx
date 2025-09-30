@@ -1,3 +1,5 @@
+
+// Home page component displays the welcome message and platform description
 function Home() {
   return (
     <section className="page home-page">

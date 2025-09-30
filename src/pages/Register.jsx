@@ -1,3 +1,5 @@
+
+// Register page component displays the registration form for new users
 function Register() {
   return (
     <section className="page register-page">

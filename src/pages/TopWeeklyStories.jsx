@@ -1,3 +1,5 @@
+
+// TopWeeklyStories page component displays the most popular stories of the week
 function TopWeeklyStories() {
   return (
     <section className="page top-weekly-stories-page">

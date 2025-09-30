@@ -1,3 +1,5 @@
+
+// Login page component displays the login form for user authentication
 function Login() {
   return (
     <section className="page login-page">
